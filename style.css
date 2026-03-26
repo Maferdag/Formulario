@@ -1,0 +1,87 @@
+/*Estilo general del cuerpo de la página*/
+body{
+    margin: 0; /*elimina los márgenes por defecto*/
+    padding: 0; /*elimina relleno por defecto*/
+    font-family: 'Segoe UI', sans serif; /*tipo de letra moderna*/
+
+    /*fondo con degradado*/
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh; /*altura total en la pantalla*/
+    display: flex; /*activa flexbox*/
+    justify-content: center; /*Centra horizonalmente*/
+    align-items: center; /*cnetra verticalmente*/
+}
+
+/* Caja del formulario*/
+.contenedor{
+    background: white; /*fondo blanco*/
+    padding: 40px; /*espacio interno*/
+    border-radius: 10px; /* bordes redondeados*/
+    width: 350px; /*ancho fijo*/
+
+    /*sombra para efecto moderno*/
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Titulo*/
+h2{
+    text-align: center; /*centra el texto*/
+    margin-bottom: 20px; /*espacio abajo*/
+    color: #333; /* color gris oscuro*/
+}
+
+/*etiquetas*/
+label{
+    font-size: 14px; /* tamaño pequeño*/
+    color: #555; /* gris*/
+    display: block; /* ocupa toda la linea */
+    margin-top: 10px; /* separación superior*/
+}
+
+/* Campos de texto*/
+input[type="text"]{
+    width: 100%; /* ocupa todo el ancho*/
+    padding: 10px; /* espacio interno*/
+    margin-top: 5px; /* separación del label*/
+
+    border: 1px solid #ccc; /* borde gris */
+    border-radius: 6px; /* bordes redondeados*/
+
+    transition: 0.3s; /* animación suave*/
+
+}
+
+/* Cuando haces clic en el input */
+input[type="text"]:focus{
+    border-color: #667eea; /*cambia color del borde*/
+    outline: none; /* quita borde azul por defecto*/
+
+    /* efecto de iluminación*/
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+
+}
+
+/*Boton enviar*/
+input[type="submit"]{
+    width: 100%; /* ancho completo*/
+    padding: 12px; /* tamaño del boton*/
+    margin-top: 20px; /* separación arriba*/
+
+    border: none; /* sin borde*/
+    border-radius: 6px; /* redondeado*/
+
+    background: #667eea;  /*color principal*/
+    color: white; /* texto blanco*/
+
+    font-size: 16px; /* tamaño de texto*/
+    cursor: pointer; /* cambia el cursor*/
+
+    transition: 0.3; /* animacion*/
+
+}
+
+/* Cuando pasas el mouse*/
+input[type="submit"]:hover{
+    background: #5a67d8; /* color más oscuro*/
+}
+
