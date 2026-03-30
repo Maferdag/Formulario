@@ -1,11 +1,11 @@
 <?php
 
 //Crear conexión a la base de datos 
-$conexion = new mysqli("lacalhost", "root", "rootroot", "SILVA");
+$conexion = new mysqli("localhost", "root", "User.sede", "SILVA");
 
 //Verificar si hubo error al conectar
 if($conexion->connect_error) {
-    die("Error de conxión: " . $conexion->connect_error);
+    die("Error de conexión: " . $conexion->connect_error);
 }
 
 //Obtener datos enviados desde el formulario
@@ -31,8 +31,13 @@ if ($stmt-> execute()){
 
     //Mostrar los datos ingresados 
     echo "<p> $nombre es su nombre</p>";
-    echo "<p> $apellido es su apellido paterno</p>";
+    echo "<p> $apellidop es su apellido paterno</p>";
     echo "<p> $apellidom es su apellido materno</p>";
 }else {
     echo "Error al guardar";
 }
+
+$stmt->close();
+$conexion->close();
+
+?>
